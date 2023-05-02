@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pytagoras: Katet Räknare</title>
+    <link rel="stylesheet" href="Pytagoras.css">
+    <script src="Pytagoras.js" defer></script>
+</head>
+<body>
+    <div class="div_main">
+        <div>Pytagoras Sats</div>
+        <div class="inner_div">
+            <p>I en rätvinklig triangel finns samband mellan sidorna som
+               har uppkallats efter en grekisk matematiker Pythagoras. 
+            </p>
+            <p> Formeln gäller rätvinkliga tringlar och kallar de två
+                kortaste sidorna för kateter och den längsta för hypotenusan.
+            </p>
+            <p> Formelan lyder så här: <br> katet&sup2; + katet&sup2; = hypotenusan&sup2;</p>
+            <select class="mina-inputs" id="minselect">
+                <option value="katet">Du vet längden på bägge kateter</option>
+                <option value="hypotenosan">Du vet längden på hypotenusan och en katet</option>
+            </select>
+            <br>
+            <input class="mina_inputs" id="input_v1" type="text" 
+            maxlength="6" size="6" placeholder="Katet" required="true">
+            
+            <input class="mina_inputs" id="input_v2" type="text" 
+            maxlength="6" size="6" placeholder="Katet" required="true">
+
+            <button id="Calc_knapp"> Beräkna </button>
+
+            <div id="svar_id">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

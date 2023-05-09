@@ -1,0 +1,19 @@
+body{
+    background: rgb(24, 1, 27);
+    padding: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.listabilar_div{
+    background-color: rosybrown;
+    margin: 1.2rem;
+    width: 50%;
+    border-radius: 1.2rem;
+    padding: 0.6rem;
+}
+
+h1{
+    margin: 0.2rem;
+   color: white;
+}

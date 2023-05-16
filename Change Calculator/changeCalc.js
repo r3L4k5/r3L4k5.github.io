@@ -20,10 +20,10 @@ function kalkyleraClick(){
    let t_inbet = parseInt(input_inbet.value);
 
    if (t_pris > t_inbet){
-    alert("För lite pengar! Betala hela priset eller dra iväg, dinfattiglapp")
+    alert("För lite pengar! Betala hela priset eller dra iväg, din fattiglapp")
    }
    else{
-    getExchangeArray(t_inbet, t_pris);
+    
 
     const exchange_array = getExchangeArray(t_inbet, t_pris);
 
@@ -44,7 +44,7 @@ function kalkyleraClick(){
    getExchangeArray(t_inbet, t_pris);
 }
  
-let exChange = (belopp, sedel) => {Math.floor(belopp / sedel)}
+let exChange = (belopp, sedel) => { return Math.floor(belopp / sedel)}
 
 function getExchangeArray(inbetalning, priset){
     let antal_mynt = 0;
@@ -136,6 +136,8 @@ function getExchangeArray(inbetalning, priset){
     }
 
      sedlar_mynt_array.push(t_pengar)
+
+     console.log(`en kronor ${antal_mynt}`)
 
      return sedlar_mynt_array;
 }
